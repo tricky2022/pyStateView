@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyStateView"
+version = "1.0.0"
+description = "Industrial discrete state timeline visualization widgets for PyQt5"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "pyStateView Contributors"}]
+dependencies = ["PyQt5>=5.15"]
+
+[project.urls]
+Homepage = "https://example.com/pyStateView"
+
+[tool.setuptools]
+packages = ["pyStateView", "pyStateView.timeline", "pyStateView.widgets", "pyStateView.utils"]
+include-package-data = true
